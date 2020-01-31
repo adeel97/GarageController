@@ -1,0 +1,108 @@
+body {
+  background-color: #465E84;
+  text-align: center;
+    font-size: 20px;
+}
+
+#status-bar-open {
+  height: 80px;
+  width: 100%;
+  background-color: green;
+  font-size: 200%;
+  font-family: arial;
+}
+
+#status-bar-closed {
+  height: 80px;
+  width: 100%;
+  background-color: red;
+  font-size: 200%;
+  font-family: arial;
+}
+
+#status-bar-opening {
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+  font-size: 200%;
+  font-family: arial;
+}
+
+#status-bar-closing {
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+  font-size: 200%;
+  font-family: arial;
+}
+
+#status-bar-stopped {
+  height: 80px;
+  width: 100%;
+  background-color: blue;
+  font-size: 200%;
+  font-family: arial;
+}
+#status-bar-loading {
+  height: 80px;
+  width: 100%;
+  background-color: orange;
+  font-size: 200%;
+  font-family: arial;
+}
+#status-bar-fault {
+  height: 80px;
+  width: 100%;
+  background-color: yellow;
+  font-size: 200%;
+  font-family: arial;
+}
+
+
+#light-bar-on {
+  height: 80px;
+  width: 100%;
+  background-color: yellow;
+  font-size: 200%;
+  font-family: arial;
+}
+
+#light-bar-off {
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+  font-size: 200%;
+  font-family: arial;
+}
+
+.off-button{
+  height: 80px;
+  width: 100%;
+ }
+
+ .small-button{
+   height: 80px;
+   width: 30%;
+ }
+
+ .smallest-button{
+   height: 60px;
+   width: 30%;
+ }
+
+ .sliders{
+   width: 70%
+ }
+
+ .small-button {
+   background-color: white;
+ }
+
+
+ .smallest-button {
+   background-color: white;
+ }
+
+ .off-button {
+   background-color: white;
+ }

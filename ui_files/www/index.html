@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--main screen-->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garage Controls</title>
+<link rel="stylesheet"  href="css/styles.css">
+<script type="text/javascript" src="resources/particle/particle.min.js"></script>
+<script src="js/GarageApp.js"></script>
+
+</head>
+
+<body>
+
+  <div id="basic-controls">
+          <!--States: OPEN, CLOSED, OPENING, CLOSING, PAUSED
+          USE: shows user the current state of the garage-->
+              <div id="status-bar-open">
+              DOOR OPEN
+              </div>
+              <div id="status-bar-closed">
+                DOOR CLOSED
+              </div>
+              <div id="status-bar-opening">
+                DOOR OPENING
+              </div>
+              <div id="status-bar-closing">
+                DOOR CLOSING
+              </div>
+              <div id="status-bar-stopped">
+                DOOR STOPPED
+              </div>
+              <div id="status-bar-fault">
+                FAULT DETECTED
+              </div>
+              <div id="status-bar-loading">
+                LOADING
+              </div>
+            <br>
+            <button id="door-open/close" class="off-button"> OPEN/CLOSE DOOR </button><br><br>
+            <!-- <button id="door-close"class="off-button"> CLOSE DOOR </button> -->
+            <!-- <button id="door-open"class="off-button"> OPEN DOOR </button><br><br> -->
+
+            <!--status of the light (on/off)-->
+            <div id="light-bar-on">
+              LIGHT ON
+            </div>
+            <div id="light-bar-off">
+              LIGHT OFF
+            </div>
+            <br>
+            <!--turn off light-->
+            <button id="light-off" class="off-button"> TURN LIGHT OFF </button>
+            <button id="light-on" class="off-button"> TURN LIGHT ON</button>
+
+            <br><br>
+            <!--button to move to advanced-features -->
+          <button id="adv" class="small-button"> Advanced Features </button>
+            <br><br>
+            <button id="sign-out" class="smallest-button"> Sign Out </button>
+  </div>
+
+  <div id="advanced-features">
+              <label>Enable Auto-Close<input id="enableAC" type = "checkbox" ></label><br><br>
+              <!--sliders to set time for auto-close feature-->
+                <div id = "ACcontrols"><label>Amount of Time Until Auto-close<br>Seconds<input id="closeSlider" class="sliders" type="range" min="5" max="60" ></label>
+                <span id="closeLabel" >100</span>
+            <br><br></div>
+            <!--brightness slider-->
+            <div id=lightStuff>
+              <label>Set Light Brightness<br><input id="brightSlider" class="sliders" type="range" min="0" max="100" value="100"></label>
+              <span id="brightLabel" >100</span>
+            <br><br>
+            <!--light auto-off timer-->
+              <label>Amount of Time Until Light Turns Off<br></label>
+                <label>Seconds<input id="lightSlider" class="sliders" type="range" min="1" max="60" value="30"></label>
+                <span id="lightLabel" >100</span>
+              </div>
+            <br><br>
+            <!--button to return to basic-controls-->
+            <button id="return-home" class="small-button"> Return to Home Screen </button>
+</div>
+
+  <div id="login">
+            <!--username and password input-->
+            <h1> Login Page </h1>
+            Username: <input type = "text" name = "username"><br><br>
+            Password: <input type = "password" name = "password"><br><br>
+            <!--login and move to basic-controls (main screen)-->
+            <button id="login-button" class="small-button"> Login </button>
+          <br><br>
+            <!--move to create-account screen-->
+            <button id="go2create" class="smallest-button"> Create Account </button>
+  </div>
+
+  <div id="create-account">
+          <!--username and password input for creating account-->
+          <h1> Create an Account </h1>
+          <div class="txt">Username: <input type = "text" name = "username"><br><br>
+          Password: <input type = "password" name = "password"><br><br>
+          Re-enter Password: <input type = "password" name = "password"><br><br></div>
+          <!--button to finalize the account creation process and move to login screen-->
+          <button id="create" class="small-button"> Create Account </button>
+  </div>
+
+
+</body>
+</html>
